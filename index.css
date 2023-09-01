@@ -1,0 +1,218 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index : 999;
+}
+.nav{
+   height: 90px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20%;
+    
+}
+.nav img{
+    width: 240px;
+    height: 72px;
+}
+
+.join-about{
+    display: flex;
+    gap: 20px;
+}
+
+.join-about a , .language {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+.dropdown {
+    position: absolute;
+    right:20% ;
+    top: 70px;
+    width: 230px;
+    height: 150px;
+    display: none;
+    flex-direction: column;
+    background-color:violet;
+    border-radius: 10px;
+
+    
+}
+.drop-item , .language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.drop-item img , .language img {
+    
+    width: 30px;
+    height: 30px;
+}
+
+
+.togglebtn {
+    display: none;
+    width: 30px;
+    height: 20px;
+   
+}
+
+
+/* section 1 of class name overview style starts here */
+
+.overview{
+   /* position: fixed; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.myvideo {
+    filter: brightness(35%);
+}
+.overview-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding:  0 20%;
+   
+}
+
+.overview-text p{
+    font-size: 70px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color:#FFFFFF
+}
+
+.join-button{
+    width: 288px;
+    height: 64px;
+    background-color: #007FFF;
+    color: #FFFFFF;
+    border-radius:30px ;
+    border-color: #007FFF;
+    font-size: 20px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.overview-text button:hover{
+    color: #007FFF;
+    background-color: #FFFFFF;
+}
+
+/* section 2 of class name details style starts here */
+
+.details{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 3% 20% 0;
+}
+.details-title{
+    font-size: 20px; 
+}
+
+.launch{
+    width: 700px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: #FFFFFF;
+    padding: 2%;
+    border-radius: 20px;
+}
+.launch-time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.launch-number{
+    margin: 0;
+    font-size: 30px;
+    font-family: "Roboto" , sans-serif;
+    font-weight: 400;
+}
+.launch-description{
+    margin: 0;
+    font-size: large;
+    font-family: "Roboto" , sans-serif;
+    font-weight: 300;
+}
+.launch-week{
+    width: 60%;
+    border-left: 3px solid #886f6f;
+    border-right: 3px solid #886f6f;
+
+}
+
+/* section 3 of class name features style starts here */
+.features{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  padding: 0 20%;
+  gap: 20px;
+}
+.canava{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    
+}
+.canava-img{
+    width: 100%;
+}
+.canava-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.features-text{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    font-weight: 400;
+    line-height: 30px;
+    filter: contrast(3.96);
+    fill-opacity: 50;
+}
+.aboutus{
+    color: #007FFF;
+    font-size: 36px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    filter: contrast(3.64);
+    font-weight: bold;
+}
+.canava-heading{
+    font-size: 24px;
+    filter: contrast(20);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
