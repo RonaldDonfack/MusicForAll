@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="swipper/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css" />
+    <link rel="stylesheet" href="swipper/swipper.css">
     <link rel="stylesheet" href="index.css">
 
     <title>MusicApp</title>
@@ -14,22 +16,38 @@
   <header class="header">
 
       <nav class="nav">
-          <img src="Logo2-a7b9f0ce.svg" alt="brand logo">
+          <img class="musiclogo" src="Logo2-a7b9f0ce.svg" alt="brand logo">
           <div class="join-about">
               <a href="">Join</a>
               <a href="">About Us</a>
           </div>
           <div class="language">
             <p  id="en">  Language</p><p><i class="las la-angle-down language-icon"></i></p>
-            <div class="togglebtn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+           
           </div>
-          <div class="dropdown">
+          <div class="dropdown-language">
 
               <article class="drop-item"><p><img class="drop-img"  src="uk.svg" alt="United kingdom flag"></p><p  id="en">  EN</p></article >
               <article class="drop-item"><p><img  class="drop-img" src="fr.svg" alt="france flag"> </p><p id="fr">  FR</p></article >
           </div>
+          <div class="togglebtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown-button ">
+            <div class="join-about">
+                <a href="">Join</a>
+                <a href="">About Us</a>
+            </div>
+            <div class="language">
+                <p  id="en">  Language</p><p><i class="las la-angle-down language-icon"></i></p>
+               
+              </div>
+              <div class="dropdown-language">
+    
+                  <article class="drop-item"><p><img class="drop-img"  src="uk.svg" alt="United kingdom flag"></p><p  id="en">  EN</p></article >
+                  <article class="drop-item"><p><img  class="drop-img" src="fr.svg" alt="france flag"> </p><p id="fr">  FR</p></article >
+              </div>
+        </div>
       </nav>
   </header>
   <section class="overview">
@@ -85,20 +103,189 @@
             <p class="features-text">The often overlooked aspect of an athlete's journey is their mental health. At DoubleGap, we prioritize our users' mental well-being by equipping them with essential resources for maintaining a healthy mental balance.</p>
         </div>
     </div>
+    <div class="hello">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swipper-slide">
+                        <div class="swipper-img-container">
+                            <img src="images/image11.jpg" alt="female protrait" class="swipper-img">
+                        </div>
+                        <div class="swipper-text">
+                            <h2 class="name">Rita Blanca</h2>
+                            <div class="meet-here ">
+                                <a href="https://twitter.com/lasheart18" target="_blank">
+                                    <img src="../twit-97181053.svg" alt="twitter logo" >
+                                </a>
+                                <a href="https://instagram.com/Lasheart" target="_blank"> 
+                                    <img src="../threads-492f6bc7.svg" alt="threads logo" >
+                                </a>
+                                <a href="https://instagram.com/Lasheart" target="_blank"> 
+                                    <img src="../insta-5db2db3b.svg" alt="instagram logo" >
+                                </a>
+                            </div>
+                            <p class="description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere nulla laboriosam, veniam animi ipsa iustagnam reiciendis tempore tempora harum natus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swipper-slide">
+                        <div class="swipper-img-container">
+                            <img src="images/image5.jpg" alt="female protrait" class="swipper-img">
+                        </div>
+                        <div class="swipper-text">
+                            <h2 class="name">Paige Tetang</h2>
+                            <div class="meet-here ">
+                                <a href="https://twitter.com/lasheart18" target="_blank">
+                                    <img src="../twit-97181053.svg" alt="twitter logo" >
+                                </a>
+                                <a href="https://instagram.com/Lasheart" target="_blank"> 
+                                    <img src="../threads-492f6bc7.svg" alt="threads logo" >
+                                </a>
+                                <a href="https://instagram.com/Lasheart" target="_blank"> 
+                                    <img src="../insta-5db2db3b.svg" alt="instagram logo" >
+                                </a>
+                            </div>
+                            <p class="description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere nulla laboriosam, veniam animi ipsa iustagnam reiciendis tempore tempora harum natus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swipper-slide">
+                        <div class="swipper-img-container">
+                            <img src="images/image14.jpg" alt="female protrait" class="swipper-img">
+                        </div>
+                        <div class="swipper-text">
+                            <h2 class="name">Paola Sorrelle</h2>
+                            <div class="meet-here ">
+                                <a href="https://twitter.com/lasheart18" target="_blank">
+                                    <img src="../twit-97181053.svg" alt="twitter logo" >
+                                </a>
+                                <a href="https://instagram.com/Lasheart" target="_blank"> 
+                                    <img src="../threads-492f6bc7.svg" alt="threads logo" >
+                                </a>
+                                <a href="https://instagram.com/Lasheart" target="_blank"> 
+                                    <img src="../insta-5db2db3b.svg" alt="instagram logo" >
+                                </a>
+                            </div>
+                            <p class="description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere nulla laboriosam, veniam animi ipsa iustagnam reiciendis tempore tempora harum natus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swipper-slide">
+                        <div class="swipper-img-container">
+                            <img src="images/image17.jpg" alt="female protrait" class="swipper-img">
+                        </div>
+                        <div class="swipper-text">
+                            <h2 class="name">Jerry Dongmo</h2>
+                            <div class="meet-here ">
+                                <a href="https://twitter.com/lasheart18" target="_blank">
+                                    <img src="../twit-97181053.svg" alt="twitter logo" >
+                                </a>
+                                <a href="https://instagram.com/Lasheart" target="_blank"> 
+                                    <img src="../threads-492f6bc7.svg" alt="threads logo" >
+                                </a>
+                                <a href="https://instagram.com/Lasheart" target="_blank"> 
+                                    <img src="../insta-5db2db3b.svg" alt="instagram logo" >
+                                </a>
+                            </div>
+                            <p class="description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere nulla laboriosam, veniam animi ipsa iustagnam reiciendis tempore tempora harum natus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swipper-slide">
+                        <div class="swipper-img-container">
+                            <img src="images/image15.jpg" alt="female protrait" class="swipper-img">
+                        </div>
+                        <div class="swipper-text">
+                            <h2 class="name">Pavel Tene</h2>
+                            <div class="meet-here ">
+                                <a href="https://twitter.com/lasheart18" target="_blank">
+                                    <img src="../twit-97181053.svg" alt="twitter logo" >
+                                </a>
+                                <a href="https://instagram.com/Lasheart" target="_blank"> 
+                                    <img src="../threads-492f6bc7.svg" alt="threads logo" >
+                                </a>
+                                <a href="https://instagram.com/Lasheart" target="_blank"> 
+                                    <img src="../insta-5db2db3b.svg" alt="instagram logo" >
+                                </a>
+                            </div>
+                            <p class="description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere nulla laboriosam, veniam animi ipsa iustagnam reiciendis tempore tempora harum natus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+      </div>
+    </div>
    </section>
    <div class="how-to-join">
     <div class="joinus1">
-        <h1 class="joinus-heading">Enter your email to join the waitlist</h1>
-        <hr>
-        <hr>
+        <div>
+            <h1 class="joinus-heading">Enter your email to <br> join the waitlist</h1>
+           <img src="lines-d371f202.svg" alt="">
+        </div>
         <img src="hand-a94595ad.svg" alt="joining us be like...">
     </div>
     <div class="joinus2">
-        <hr>
-        <input type="email" placeholder="Enter your email" name="mail">
-        <hr>
+        <div >
+
+            <hr>
+            <input class="getemail" type="email" placeholder="Enter your email" name="mail">
+            <hr>
+        </div>
         <button class="join-button" value="submit">Join</button>
     </div>
    </div>
+   <footer class="footer">
+        <div class="meet">
+            <div class="contact">
+                <p class="footer-heading">More info</p>
+                <p class="footer-text">(+123) 456-7890</p>
+                <p class="footer-text">Contact@musicapp.com</p>
+            </div>
+            <div class="social">
+                <div class="social-icon">
+
+                    <a href="https://twitter.com/lasheart18" target="_blank">
+                        <img src="twit-97181053.svg" alt="twitter logo" >
+                    </a>
+                    <a href="https://instagram.com/Lasheart" target="_blank"> 
+                        <img src="threads-492f6bc7.svg" alt="threads logo" >
+                      </a>
+                      <a href="https://instagram.com/Lasheart" target="_blank"> 
+                        <img src="insta-5db2db3b.svg" alt="instagram logo" >
+                      </a>
+                </div>
+                  <a href="https://instagram.com/Lasheart"> 
+                    <img src="fist-eba16031.svg" alt="">
+                  </a>
+            </div>
+        </div>
+        <div class="right">
+            <p class="footer-heading">DoubleGap</p>
+            <p class="footer-text">@2023 all right reserved</p>
+        </div>
+   </footer>
+
+    <!-- Swiper JS -->
+  <script src="swipper/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="index.js"></script>
 </body>
 </html>

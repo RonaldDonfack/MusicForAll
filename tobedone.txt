@@ -1,0 +1,7 @@
+feature 
+
+	use javascript : array containing the image, the title and the text the use javascript map function to insert the element in the html file, this may be done in an external javascript file.
+
+navigating images at the buttom
+
+	technology to use : swipper.js  
