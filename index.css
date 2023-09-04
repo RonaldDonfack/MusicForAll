@@ -23,8 +23,14 @@ video{
     width: 100%;
     height: 90px;
     z-index : 999;
+    display: flex;
+    flex-direction: column;
+}
+.header-scroll {
+    background-color: rgb(56, 127, 185);
 }
 .nav{
+    position: relative;
    height: 90px;
     background-color: transparent;
     display: flex;
@@ -56,12 +62,14 @@ video{
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    right:20% ;
+    right:10% ;
     top: 70px;
     background-color:rgb(194, 156, 194);
-    border-radius: 10px;
+    border-radius: 10px; 
+}
 
-    
+.dropdown-language-open{
+    display: flex;
 }
 .drop-item , .language {
     display: flex;
@@ -94,11 +102,12 @@ video{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    top: 100px;
-    right: 23%;
+    top: 70px;
+  right: 8%;
     border-radius: 20px;
     background-color: rgb(136, 156, 151);
 }
+
 .dropdown-button .join-about{
     display: flex;
     flex-direction: column;
@@ -283,7 +292,7 @@ video{
 /* footer of class name footer style starts here */
 
 .footer{
-    background:#05427e;
+    background:#45678a69;
     padding: 0 20%;
     display: flex;
     flex-direction: column;
@@ -333,9 +342,7 @@ video{
     .overview-text{
         padding: 0;
     }
-    .footer{
-        height: 60vh;
-    }
+   
 }
 @media (width < 1024px){
     .nav ,.details ,.features,.how-to-join, .footer{
@@ -349,9 +356,7 @@ video{
     .nav ,.details ,.features,.how-to-join, .footer{
         padding: 0 5%;
     }
-    .features-text{
-        text-align: center;
-    }
+ 
     .togglebtn i{
         display :  flex;
         justify-content: center;
@@ -375,11 +380,16 @@ video{
     }
     .ddbstatus{ 
         display :flex;
-        right: 7%;
-        top: 40px;
+     
     }
-    .dropdown-button .language{
-        display:flex;
+    .language-in-toggle{
+        display: flex;
+    }
+    .ddtle{
+        display: flex;
+    }
+    .dropdown-language-open{
+        display: none;
     }
     .meet{
         /* gap: 70px; */
@@ -393,6 +403,7 @@ video{
     }
     .canava img{
         width: 60vw;
+        max-height: 200px;
         height: 40vh;
         max-width: 400px;
         margin: 0 auto;
@@ -400,6 +411,9 @@ video{
     .joinus-heading{
         font-size: 2rem;
         text-align: center;
+    }
+    .footer{
+        height: 60vh;
     }
 }
 @media(width < 500px){
@@ -410,27 +424,28 @@ video{
         width: 150px;
         height: 50px;
     }
+    .overview-text p{
+        font-size: 2.7rem;
+    }
     .meet{
         gap: 70px;
         padding-top: 30px;
     }
     .footer{
-        height: 90vh;
+        height: 80vh;
     }
-     .meet,.footer{
+     .meet{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; 
         align-items: center;
     }
     .launch{
         min-width: 280px;
     }
-    .social{
-        max-width: 200px;
-    }
     .hello{
         width: 90vw;
     }
-  
+    .swipper-img-container{
+        display: none ;
+    }
 }

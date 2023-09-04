@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="swipper/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css" />
-    <link rel="stylesheet" href="swipper/swipper.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="swipper/swipper.css">
 
     <title>MusicApp</title>
 </head>
@@ -18,37 +18,41 @@
       <nav class="nav">
           <img class="musiclogo" src="Logo2-a7b9f0ce.svg" alt="brand logo">
           <div class="join-about">
-              <a href="">Join</a>
+              <a href="#letmeet">Join</a>
               <a href="">About Us</a>
           </div>
-          <div class="language">
-            <p  id="en">  Language</p><p><i class="las la-angle-down language-icon"></i></p>
-           
-          </div>
-          <div class="dropdown-language">
+            <div class="endnav">
 
-              <article class="drop-item"><p><img class="drop-img"  src="uk.svg" alt="United kingdom flag"></p><p  id="en">  EN</p></article >
-              <article class="drop-item"><p><img  class="drop-img" src="fr.svg" alt="france flag"> </p><p id="fr">  FR</p></article >
+                <div class="language">
+                    <p  id="en">  Language</p><p><i class="las la-angle-down language-icon"></i></p>
+                
+                </div>
+                <div class="dropdown-language">
+        
+                    <article class="drop-item"><p><img class="drop-img"  src="uk.svg" alt="United kingdom flag"></p><p  id="en">  EN</p></article >
+                    <article class="drop-item"><p><img  class="drop-img" src="fr.svg" alt="france flag"> </p><p id="fr">  FR</p></article >
+                </div>
+
+                <div class="togglebtn">
+                    <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="dropdown-button ">
+                    <div class="join-about">
+                        <a href="#letmeet">Join</a>
+                        <a href="">About Us</a>
+                    </div>
+                    <div class="language language-in-toggle">
+                        <p  id="en">  Language</p><p><i class="las la-angle-down language-icon"></i></p>
+                    
+                    </div>
+                    <div class="dropdown-language ddtl ">
+            
+                        <article class="drop-item"><p><img class="drop-img"  src="uk.svg" alt="United kingdom flag"></p><p  id="en">  EN</p></article >
+                        <article class="drop-item"><p><img  class="drop-img" src="fr.svg" alt="france flag"> </p><p id="fr">  FR</p></article >
+                    </div>
+                </div>
           </div>
-          <div class="togglebtn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="dropdown-button ">
-            <div class="join-about">
-                <a href="">Join</a>
-                <a href="">About Us</a>
-            </div>
-            <div class="language">
-                <p  id="en">  Language</p><p><i class="las la-angle-down language-icon"></i></p>
-               
-              </div>
-              <div class="dropdown-language">
-    
-                  <article class="drop-item"><p><img class="drop-img"  src="uk.svg" alt="United kingdom flag"></p><p  id="en">  EN</p></article >
-                  <article class="drop-item"><p><img  class="drop-img" src="fr.svg" alt="france flag"> </p><p id="fr">  FR</p></article >
-              </div>
-        </div>
-      </nav>
+    </nav>
   </header>
   <section class="overview">
     <video loop autoPlay muted playsInline  class="myvideo">
@@ -57,7 +61,7 @@
     </video>
     <div class="overview-text">
         <p >The Ultimate Athlectic <br> Companion</p>
-        <button class="join-button">Join</button>
+        <a href="#letmeet"></a><button class="join-button">Join</button></a>
     </div>
   </section>
    <section class="details">
@@ -103,7 +107,7 @@
             <p class="features-text">The often overlooked aspect of an athlete's journey is their mental health. At DoubleGap, we prioritize our users' mental well-being by equipping them with essential resources for maintaining a healthy mental balance.</p>
         </div>
     </div>
-    <div class="hello">
+    <div class="canava canava-swipper">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -227,13 +231,13 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
             <div class="swiper-pagination"></div>
       </div>
     </div>
    </section>
-   <div class="how-to-join">
+   <div id="letmeet" class="how-to-join">
     <div class="joinus1">
         <div>
             <h1 class="joinus-heading">Enter your email to <br> join the waitlist</h1>
