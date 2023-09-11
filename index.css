@@ -62,7 +62,7 @@ video{
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    right:10% ;
+    right:20% ;
     top: 70px;
     background-color:rgb(194, 156, 194);
     border-radius: 10px; 
@@ -227,6 +227,13 @@ video{
   gap: 40px;
   margin: 30px 0;
 }
+.maprendering{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
 .canava{
     width: 100%;
     display: flex;
@@ -342,6 +349,9 @@ video{
     .overview-text{
         padding: 0;
     }
+    .dropdown-language {
+        right: 10%;
+    }
    
 }
 @media (width < 1024px){
@@ -350,6 +360,9 @@ video{
     }
 
     /* .overview-text  */
+    .overview-text p{
+        font-size: 3.8rem;
+    }
       
 }
 @media (width < 805px){
@@ -367,7 +380,7 @@ video{
     }
 
     .overview-text p{
-        font-size: 3.3rem;
+        font-size: 3.2rem;
     }
     .join-about, .language{
         display: none;
