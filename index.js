@@ -92,54 +92,90 @@ const contentContainer = document.querySelector(".maprendering");
 // console.log(stringify(mapping))
 
 document.addEventListener("DOMContentLoaded",() => {
-    const body = document.querySelector("body")
-    const header = document.querySelector(".header")
-    const language = document.querySelector(".language")
-    const languageInToggle = document.querySelector(".language-in-toggle")
-    const ddlanguage = document.querySelector(".ddtl")
-    const dropdownLanguage = document.querySelector(".dropdown-language")
-    const  togglebtn = document.querySelector(".togglebtn")
-    const dropdownbtn = document.querySelector('.dropdown-button')
 
-    language.onclick = ()=>{
-      dropdownLanguage.classList.toggle("dropdown-language-open") 
-      
-      let isOpen = dropdownLanguage.classList.contains("dropdown-language-open")
+  const body = document.querySelector("body");
+  const header = document.querySelector(".header");
+  const language = document.querySelector(".language");
+  const languageInToggle = document.querySelector(".language-in-toggle");
+  const ddlanguage = document.querySelector(".ddtl");
+  const dropdownLanguage = document.querySelector(".dropdown-language");
+  const togglebtn = document.querySelector(".togglebtn");
+  const dropdownbtn = document.querySelector('.dropdown-button');
 
-      console.log (isOpen)
-      
-      if (isOpen === true){
-      // window.onclick = () => dropdownLanguage.classList.remove("dropdown-language-open");
-      body.onscroll = () => dropdownLanguage.classList.remove("dropdown-language-open")
-      }
+  //  changing the color of the header after an onscroll event  
 
-
+  const colorChangeOnScrollHandler = () => {
+    if (window.scrollY >= 90) {
+      header.classList.add("header-scroll")
+    } else {
+      header.classList.remove("header-scroll")
     }
-    language.onblur = () => {
-      dropdownLanguage.classList.add('dropdown-language')
-    }
-    languageInToggle.onclick = () =>{
+};
+window.addEventListener("scroll", colorChangeOnScrollHandler);
 
-      ddlanguage.classList.toggle("ddtle") 
-    }
-    togglebtn.onclick = ()=>{
-      dropdownbtn.classList.toggle("ddbstatus") 
-      
-    }
-    body.onscroll = () => {
-      ddlanguage.classList.remove("ddtle") 
-      dropdownbtn.classList.remove("ddbstatus")
+  // Close the language dropdown when clicked outside of it
+  document.addEventListener("click", (event) => {
+    if (event.target !== language) {
+      dropdownLanguage.style.display = "none";
      
     }
+  });
 
-    const colorChangeOnScrollHandler = () => {
-      if (window.scrollY >= 90) {
-        header.classList.add("header-scroll")
-      } else {
-        header.classList.remove("header-scroll")
-      }
-  };
-  window.addEventListener("scroll", colorChangeOnScrollHandler);
+  // Close the language dropdown when clicked on the language button again
+  language.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevents immediate execution of the outer event listener
+    dropdownLanguage.style.display = "none";
+   
+  });
+  // Open the language dropdown when clicked on the language button
+  language.addEventListener('click', () => {
+    dropdownLanguage.style.display = "flex";
+
+    const isLanguageOpen = dropdownLanguage.classList.contains("dropdown-language-open");
+    console.log(isLanguageOpen);
+  });
+
+   // Close the language dropdown in the togglebtn when clicked outside of it
+   document.addEventListener("click", (event) => {
+    if (event.target !== languageInToggle) {
+      ddlanguage.style.display = "none";
+     
+    }
+  });
+
+  // Close the language dropdown when clicked on the language button again
+ languageInToggle.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevents immediate execution of the outer event listener
+    ddlanguage.style.display = "none";
+   
+  });
+  // Open the language dropdown when clicked on the language button
+  languageInToggle.onclick = () =>{
+    ddlanguage.style.display = "flex";
+  }
+
+// Close the language dropdown in the togglebtn when clicked outside of it
+document.addEventListener("click", (event) => {
+  if (event.target !== togglebtn) {
+    dropdownbtn.style.display = "none";
+    
+  }
+});
+
+// Close the language dropdown when clicked on the language button again
+togglebtn.addEventListener('click', (event) => {
+  event.stopPropagation(); // Prevents immediate execution of the outer event listener
+  dropdownbtn.style.display = "none";
+
+});
+
+
+  togglebtn.onclick = ()=>{
+    dropdownbtn.style.display = "flex";  
+  }
+
+  
+ 
 
 })
 

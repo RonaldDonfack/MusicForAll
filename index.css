@@ -64,7 +64,7 @@ video{
     gap: 10px;
     right:20% ;
     top: 70px;
-    background-color:rgb(194, 156, 194);
+    background-color:rgb(74, 143, 200);
     border-radius: 10px; 
 }
 
@@ -103,9 +103,9 @@ video{
     align-items: center;
     gap: 10px;
     top: 70px;
-  right: 8%;
+     right: 8%;
     border-radius: 20px;
-    background-color: rgb(136, 156, 151);
+    background-color: rgb(74, 143, 200);
 }
 
 .dropdown-button .join-about{
@@ -114,8 +114,9 @@ video{
     gap: 10px;
 }
 .dropdown-button .dropdown-language{
-    top: 170px;
-    right: 10%;
+    top: 210px;
+    right: 4%;
+    width: 280px;
 }
 
 
