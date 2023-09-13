@@ -6,6 +6,9 @@
 margin: 0;
 padding: 0;
   }
+  html{
+    scroll-behavior: smooth;
+  }
 body{
     margin: 0;
     padding: 0;
@@ -151,9 +154,13 @@ video{
     color:#FFFFFF
 }
 
-.join-button{
+.overview-text a , .join-button{
     width: 250px;
     height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration : none;
     background-color: #007FFF;
     color: #FFFFFF;
     border-radius:30px ;
@@ -162,10 +169,11 @@ video{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-.join-button:hover{
+.overview-text a:hover , .join-button:hover{
     color: #007FFF;
     background-color: #FFFFFF;
 }
+
 
 /* section 2 of class name details style starts here */
 
@@ -242,7 +250,7 @@ video{
     
 }
 .canava-img{
-    width: 80vw;
+    width: 80%;
 }
 .canava-content{
     display: flex;
