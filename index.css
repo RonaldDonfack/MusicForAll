@@ -69,7 +69,7 @@ video{
 }
 
 .dropdown-language-open{
-    display: flex;
+    display: none;
 }
 .drop-item , .language {
     display: flex;
@@ -103,7 +103,7 @@ video{
     align-items: center;
     gap: 10px;
     top: 70px;
-     right: 8%;
+    right: 8%;
     border-radius: 20px;
     background-color: rgb(74, 143, 200);
 }
@@ -242,7 +242,7 @@ video{
     
 }
 .canava-img{
-    width: 90vw;
+    width: 80vw;
 }
 .canava-content{
     display: flex;
@@ -366,6 +366,7 @@ video{
     }
       
 }
+
 @media (width < 805px){
     .nav ,.details ,.features,.how-to-join, .footer{
         padding: 0 5%;

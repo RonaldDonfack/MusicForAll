@@ -91,6 +91,7 @@ const contentContainer = document.querySelector(".maprendering");
 });
 // console.log(stringify(mapping))
 
+
 document.addEventListener("DOMContentLoaded",() => {
 
   const body = document.querySelector("body");
@@ -154,28 +155,51 @@ window.addEventListener("scroll", colorChangeOnScrollHandler);
     ddlanguage.style.display = "flex";
   }
 
-// Close the language dropdown in the togglebtn when clicked outside of it
-document.addEventListener("click", (event) => {
-  if (event.target !== togglebtn) {
-    dropdownbtn.style.display = "none";
+
+
+    // Close the language dropdown in the togglebtn when clicked outside of it
+    document.addEventListener("click", (event) => {
+      if (event.target !== togglebtn) {
+        dropdownbtn.style.display = "none";  
+      }
     
+    });
+    
+   
+    // Close the language dropdown when clicked on the language button again
+    togglebtn.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevents immediate execution of the outer event listener
+      dropdownbtn.style.display = "none";
+    
+    });
+    
+    
+      togglebtn.onclick = ()=>{
+        dropdownbtn.style.display = "flex"; 
+        
+      }
+
+
+
+// window.addEventListener('resize' , makeTogglebtnOperational)
+
+
+const resizeObserver = new ResizeObserver(entries => {
+  for (let entry of entries) {
+    const { width, height } = entry.contentRect;
+    // screenWidth = width
+    console.log('Element size changed to', width, 'x', height);
+
+    if (width > 800){
+      dropdownbtn.style.display = "none"
+    }
+    if (width < 806){
+      dropdownLanguage.style.display = "none"
+    }
   }
 });
 
-// Close the language dropdown when clicked on the language button again
-togglebtn.addEventListener('click', (event) => {
-  event.stopPropagation(); // Prevents immediate execution of the outer event listener
-  dropdownbtn.style.display = "none";
-
-});
-
-
-  togglebtn.onclick = ()=>{
-    dropdownbtn.style.display = "flex";  
-  }
-
-  
- 
+resizeObserver.observe(body);
 
 })
 
