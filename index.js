@@ -33,18 +33,18 @@ var swiper = new Swiper(".mySwiper", {
 const content = [
   {
     img: "net-02a3b2aa.svg",
-    h3: "Networking",
-    p: "Lorem ipsum de ill explicabo saepe minima distinctio est cum sit aliquam sed corrupti, impedit ut laborum? Voluptate, earum?"
+    h3: "Connection Through Music",
+    p: "Share dynamic, mood-based playlists that update in real-time. Discover what your friends are truly listening to and feel closer, even when you're apart."
   },
   {
     img: "phy-3794e457.svg",
-    h3: "Physical",
-    p: "Lorem ipsum de ill explicabo saepe minima distinctio est cum sit aliquam sed corrupti, impedit ut laborum? Voluptate, earum?"
+    h3: "Your Personal Sonic Trainer",
+    p: "From high-energy beats for your run to calming rhythms for your yoga session, our AI curates the perfect tempo to match and enhance your physical activity"
   },
   {
     img: "mental-679a1001.svg",
-    h3: "Mental Willness",
-    p: "Lorem ipsum de ill explicabo saepe minima distinctio est cum sit aliquam sed corrupti, impedit ut laborum? Voluptate, earum?"
+    h3: "Soundscapes for the Mind",
+    p: "Reduce stress and improve focus. Dive into our scientifically-designed playlists and ambient soundscapes that help you concentrate, meditate, or simply find your calm."
   }
 ];
 
